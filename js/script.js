@@ -1,7 +1,3 @@
-document.querySelector('#DLlink').onclick = () => {
-    let text = document.querySelector('#txtarea').value;
-    this.href = 'data:text/plain;charset=utf-8,'+ encodeURIComponent(text);
-}
 
 function save() {
     const txt = document.getElementById('txtarea').value;
