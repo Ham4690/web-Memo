@@ -15,3 +15,12 @@ function save() {
     a.download = file_name + '.txt';
     a.click();
 }
+
+function copyToClipboard() {
+    const copyTarget = document.getElementById("txtarea");
+    copyTarget.select();
+    copyTarget.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    // navigator.clipboard.writeText(copyTarget.value);
+    alert("Copied the text: " + copyTarget.value);
+}
